@@ -78,9 +78,14 @@ nav {
   padding: 8px 12px;
   box-shadow: 0 15px 35px 0 rgb(60 66 87 / 8%), 0 5px 15px 0 rgb(0 0 0 / 12%);
   background-color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .photos {
+  padding: 40px 0;
 }
 
 .photos img {
@@ -90,11 +95,17 @@ nav {
 }
 
 .puppy-photo {
+  position: relative;
+  top: 40px;
+  left: 20px;
 
+  z-index: 1;
 }
 
 .kitty-photo {
-
+  position: relative;
+  bottom: 40px;
+  right: 20px;
 }
 
 section.hero {
@@ -111,6 +122,9 @@ section.about {
 .about__nav {
   grid-column: 1 / span 2;
   height: fit-content;
+
+  position: sticky;
+  top: 60px;
 }
 
 .about__nav__item {
@@ -129,6 +143,10 @@ section.about {
   width: 50%;
   height: 160px;
   object-fit: cover;
+
+  float: right;
+  margin-left: 8px;
+  margin-bottom: 8px;
 }
 
 .about__content h4:first-of-type {
@@ -140,11 +158,19 @@ section.about {
   background-color: #2f3437;
   color: white;
   font-size: 0.875rem;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .privacy-popup .close-button {
   padding: 0;
   background-color: #2f3437;
+
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 .privacy-popup p:first-of-type {
